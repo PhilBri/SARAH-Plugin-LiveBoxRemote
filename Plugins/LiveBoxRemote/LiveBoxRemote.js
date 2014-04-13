@@ -32,7 +32,7 @@ exports.action = function ( data , callback , config , SARAH ) {
     			if ( !error && response.statusCode == 200 ) {
 
     				if ( cmdArray.length ) {
-    					sendLiveBox(cmdArray)
+    					sendLiveBox(cmdArray);
     				}
 
     				console.log ( 'LiveBox Cmd : ' + data.LBCode + ' = OK' );
