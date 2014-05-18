@@ -5,12 +5,16 @@
 |___________________________________________________|
 */
 
+
 exports.action = function ( data , callback , config , SARAH ) {
+
 
 	config = config.modules.liveboxremote;
 	var cmdArray = data.LBCode.split(',');
 
+
 	sendLiveBox ( cmdArray );
+
 
 	function sendLiveBox ( cmdArray ) {
 		// Test IP
@@ -20,6 +24,7 @@ exports.action = function ( data , callback , config , SARAH ) {
 			return;
 		}
 
+
 		// Configure the request : NOTE -> The {qs} option add { ?operation=01&key=[LBCmd[123]]&mode=[LBCmd[5]] } at the end of {url}
 		var LBCmd 	= cmdArray.shift();
 		var request = require ( 'request' );
@@ -27,16 +32,20 @@ exports.action = function ( data , callback , config , SARAH ) {
     						qs      : { 'operation'	: '01', 'key' : LBCmd.substr(0,3) , 'mode' : LBCmd.substr(4,1) }
 						}
 
+
 		// Start the request
 		request( options , function ( error , response , body ) {
     			if ( !error && response.statusCode == 200 ) {
+
 
     				if ( cmdArray.length ) {
     					sendLiveBox(cmdArray);
     				}
 
+
     				console.log ( 'LiveBox Cmd : ' + data.LBCode + ' = OK' );
     				callback ({ 'tts': data.ttsAction });
+
 
     			} else {
     				callback ({ 'tts': 'erreur commande box' });

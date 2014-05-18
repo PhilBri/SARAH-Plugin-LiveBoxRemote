@@ -20,6 +20,7 @@
         <item>- de son                  <tag>out.action.LBCode="114:1"              ;out.action.ttsAction="Je baisse";                      </tag></item>
         <item>stop                      <tag>out.action.LBCode="115:2,114:2"        ;out.action.ttsAction="Son stoppé";                     </tag></item>
 
+
         <!-- Touches seules -->
         <item>Touche Boxe 0             <tag>out.action.LBCode="512:0"              ;out.action.ttsAction="Touche 0";                       </tag></item>
         <item>Touche Boxe 1             <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="Touche 1";                       </tag></item>
@@ -76,9 +77,10 @@
         <!-- 3 digits -->
         <item>Chaine Boxe 601           <tag>out.action.LBCode="518:0,512:0,513:0"  ;out.action.ttsAction="Chaine 601 affichée";            </tag></item>
 
+
    </one-of>
+
 
     <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/liveboxremote";</tag>
   </rule>
 </grammar>
-
