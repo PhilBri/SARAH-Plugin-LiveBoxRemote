@@ -5,82 +5,595 @@
     
     <item>Sarah</item>
     <one-of>
-        <item>Allume la Boxe            <tag>out.action.LBCode="116:0"              ;out.action.ttsAction="la box est allumée";             </tag></item>
-        <item>Eteint la Boxe            <tag>out.action.LBCode="116:0"              ;out.action.ttsAction="la box est éteinte";             </tag></item>
-        <item>Affiche le menu de la Boxe<tag>out.action.LBCode="139:0"              ;out.action.ttsAction="le menu de la Box est affiché";  </tag></item>
- 
+        <item>Allume la Box
+            <tag>out.action.LBCode="116:0";         out.action.ttsAction="La box est allumée";                  </tag>
+        </item>
+        <item>Eteint la Box
+            <tag>out.action.LBCode="116:0";         out.action.ttsAction="La box est éteinte";                  </tag>
+        </item>
+        <item>Affiche le menu de la Box
+            <tag>out.action.LBCode="139:0";         out.action.ttsAction="Le menu est affiché";                 </tag>
+        </item>
+        <item>Affiche les infos du programme
+            <tag>out.action.LBCode="108:0";         out.action.ttsAction="Affichage des infos";                 </tag>
+        </item>
+        <item>Affiche les infos de la chaine
+            <tag>out.action.LBCode="108:0";         out.action.ttsAction="Affichage des infos";                 </tag>
+        </item>
+        <item>Enlève les infos de la chaine
+            <tag>out.action.LBCode="158:0";         out.action.ttsAction="Infos enlevées";                      </tag>
+        </item>
+        <item>Retire les infos de la chaine
+            <tag>out.action.LBCode="158:0";         out.action.ttsAction="Info retirées";                       </tag>
+        </item>
+        <item>Mets la box sur pause
+            <tag>out.action.LBCode="164:0";         out.action.ttsAction="La box est en pause";                 </tag>
+        </item>
+        <item>Mets sur pause la box
+            <tag>out.action.LBCode="164:0";         out.action.ttsAction="La box est en pause";                 </tag>
+        </item>
+        <item>Mets la box en pause
+            <tag>out.action.LBCode="164:0";         out.action.ttsAction="La box est en pause";                 </tag>
+        </item>
+        <item>Mets la box en lecture
+            <tag>out.action.LBCode="164:0";         out.action.ttsAction="La box est en Lecture";               </tag>
+        </item>
+        <item>Mets en lecture la box
+            <tag>out.action.LBCode="164:0";         out.action.ttsAction="La box est en Lecture";               </tag>
+        </item>
+        <item>Mets la box en avance rapide
+            <tag>out.action.LBCode="159:0";         out.action.ttsAction="Avance rapide en cours";              </tag>
+        </item>
+        <item>Mets en avance rapide la box
+            <tag>out.action.LBCode="159:0";         out.action.ttsAction="Avance rapide en cours";              </tag>
+        </item>
+        <item>Mets en retour rapide la box
+            <tag>out.action.LBCode="168:0";         out.action.ttsAction="Retour rapide en cours";              </tag>
+        </item>
+        <item>Mets la box en retour rapide
+            <tag>out.action.LBCode="168:0";         out.action.ttsAction="Retour rapide en cours";              </tag>
+        </item>
+
+
         <!-- Volume -->
-        <item>Monte le son de la box    <tag>out.action.LBCode="115:0"              ;out.action.ttsAction="Le volume de la Box est monté";  </tag></item>
-        <item>Baisse le son de la Box   <tag>out.action.LBCode="114:0"              ;out.action.ttsAction="Le volume de la Box est baissé"; </tag></item>
-        <item>Coupe le son de la Box    <tag>out.action.LBCode="113:0"              ;out.action.ttsAction="le son de la box est coupé";     </tag></item>
-        <item>Remet le son de la Box    <tag>out.action.LBCode="113:0"              ;out.action.ttsAction="le son de la Box est activé";    </tag></item>
+        <item>Coupe le son de la Box
+            <tag>out.action.LBCode="113:0";         out.action.ttsAction="Le son de la box est coupé";          </tag>
+        </item>
+        <item>Coupe le volume de la Box
+            <tag>out.action.LBCode="113:0";         out.action.ttsAction="le volume de la box est coupé";       </tag>
+        </item>
+        <item>Remet le volume de la Box
+        <item>Mute le son de la Box
+            <tag>out.action.LBCode="113:0";         out.action.ttsAction="Le son de la box est coupé";          </tag>
+        </item>
+        <item>Mute le volume de la Box
+            <tag>out.action.LBCode="113:0";         out.action.ttsAction="le volume de la box est coupé";       </tag>
+        </item>
+        <item>Remet le son de la Box
+            <tag>out.action.LBCode="113:0";         out.action.ttsAction="Activation du son de la box";         </tag>
+        </item>
+        <item>Démute le son de la Box
+            <tag>out.action.LBCode="113:0";         out.action.ttsAction="Le son de la Box est activé";         </tag>
+        </item>
+            <tag>out.action.LBCode="113:0";         out.action.ttsAction="le volume de la Box est activé";      </tag>
+        </item>
+        <item>démute le volume de la Box
+            <tag>out.action.LBCode="113:0";         out.action.ttsAction="le volume de la Box est activé";      </tag>
+        </item>
+         <item>Monte le son de la box
+            <tag>out.action.LBCode="115:0";         out.action.ttsAction="Le son de la Box est monté";          </tag>
+        </item>
+        <item>Augmente le son de la box
+            <tag>out.action.LBCode="115:0";         out.action.ttsAction="Le son de la Box est monté";          </tag>
+        </item>
+        <item>Monte le volume de la box
+            <tag>out.action.LBCode="115:0";         out.action.ttsAction="Le volume de la Box est monté";       </tag>
+        </item>
+        <item>augmente le volume de la box
+            <tag>out.action.LBCode="115:0";         out.action.ttsAction="Le volume de la Box est monté";       </tag>
+        </item>
+        <item>Baisse le son de la Box
+            <tag>out.action.LBCode="114:0";         out.action.ttsAction="Le son de la Box est baissé";         </tag>
+        </item>
+        <item>Diminue le son de la Box
+            <tag>out.action.LBCode="114:0";         out.action.ttsAction="Le son de la Box est baissé";         </tag>
+        </item>
+       <item>Baisse le volume de la Box
+            <tag>out.action.LBCode="114:0";         out.action.ttsAction="Le volume de la Box est baissé";      </tag>
+        </item>
+        <item>Diminue le volume de la Box
+            <tag>out.action.LBCode="114:0";         out.action.ttsAction="Le volume de la Box est baissé";      </tag>
+        </item>
+
+        <!-- Volume 3 barres -->
+        <item>Monte fortement le son de la box 
+            <tag>out.action.LBCode="115:0,115:0,115:0,";    out.action.ttsAction="Le son de la Box est monté fortement";        </tag>
+        </item>
+        <item>Augmente fortement le son de la box
+            <tag>out.action.LBCode="115:0,115:0,115:0,";    out.action.ttsAction="Le son de la Box est monté fortement";        </tag>
+        </item>
+        <item>Baisse fortement le son de la box
+            <tag>out.action.LBCode="114:0,114:0,114:0,";    out.action.ttsAction="Le son de la Box est diminué fortement";      </tag>
+        </item>
+        <item>Diminue fortement le son de la box
+            <tag>out.action.LBCode="114:0,114:0,114:0,";    out.action.ttsAction="Le son de la Box est diminué fortement";      </tag>
+        </item>
+
+        <item>Monte fortement le volume de la box
+            <tag>out.action.LBCode="115:0,115:0,115:0,";    out.action.ttsAction="Le volume de la Box est monté fortement";     </tag>
+        </item>
+        <item>augmente fortement le volume de la box
+            <tag>out.action.LBCode="115:0,115:0,115:0,";    out.action.ttsAction="Le volume de la Box est monté fortement";     </tag>
+        </item>
+        <item>baisse fortement le volume de la box
+            <tag>out.action.LBCode="114:0,114:0,114:0,";    out.action.ttsAction="Le volume de la Box est diminué fortement";   </tag>
+        </item>
+        <item>diminue fortement le volume de la box
+            <tag>out.action.LBCode="114:0,114:0,114:0,";    out.action.ttsAction="Le volume de la Box est diminué fortement";   </tag>
+        </item>
+
         <!-- Touches appui prolongé : 
         ATTENTION => Penser à la commande stop !!! -->
-        <item>+ de son                  <tag>out.action.LBCode="115:1"              ;out.action.ttsAction="Je monte";                       </tag></item>
-        <item>- de son                  <tag>out.action.LBCode="114:1"              ;out.action.ttsAction="Je baisse";                      </tag></item>
-        <item>stop                      <tag>out.action.LBCode="115:2,114:2"        ;out.action.ttsAction="Son stoppé";                     </tag></item>
+        <item>Augmente le son en continu
+            <tag>out.action.LBCode="115:1";                 out.action.ttsAction="Je monte le son";     </tag>
+        </item>
+        <item>Diminue le son en continu
+            <tag>out.action.LBCode="114:1";                 out.action.ttsAction="Je baisse le son";    </tag>
+        </item>
+        <item>Stop le son
+            <tag>out.action.LBCode="115:2,114:2";           out.action.ttsAction="Son stoppé";          </tag>
+        </item>
+
+        <!-- P+/- -->
+        <item>Chaine suivante de la Box
+            <tag>out.action.LBCode="402:0";                 out.action.ttsAction="Chaine suivante de la Box";   </tag>
+        </item>
+        <item>Chaine précédente de la Box
+            <tag>out.action.LBCode="403:0";                 out.action.ttsAction="Chaine précédente de la Box"; </tag>
+        </item>
 
 
         <!-- Touches seules -->
-        <item>Touche Boxe 0             <tag>out.action.LBCode="512:0"              ;out.action.ttsAction="Touche 0";                       </tag></item>
-        <item>Touche Boxe 1             <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="Touche 1";                       </tag></item>
-        <item>Touche Boxe 2             <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="Touche 2";                       </tag></item>
-        <item>Touche Boxe 3             <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="Touche 3";                       </tag></item>
-        <item>Touche Boxe 4             <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Touche 4";                       </tag></item>
-        <item>Touche Boxe 5             <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="Touche 5";                       </tag></item>
-        <item>Touche Boxe 6             <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="Touche 6";                       </tag></item>
-        <item>Touche Boxe 7             <tag>out.action.LBCode="519:0"              ;out.action.ttsAction="Touche 7";                       </tag></item>
-        <item>Touche Boxe 8             <tag>out.action.LBCode="520:0"              ;out.action.ttsAction="Touche 8";                       </tag></item>
-        <item>Touche Boxe 9             <tag>out.action.LBCode="521:0"              ;out.action.ttsAction="Touche 9";                       </tag></item>
-        <item>Touche Boxe haut          <tag>out.action.LBCode="103:0"              ;out.action.ttsAction="Touche haut";                    </tag></item>
-        <item>Touche Boxe Bas           <tag>out.action.LBCode="108:0"              ;out.action.ttsAction="Touche bas";                     </tag></item>
-        <item>Touche Boxe Gauche        <tag>out.action.LBCode="105:0"              ;out.action.ttsAction="Touche gauche";                  </tag></item>
-        <item>Touche Boxe Droite        <tag>out.action.LBCode="116:0"              ;out.action.ttsAction="Touche droite";                  </tag></item>
-        <item>Touche Boxe  O KAI        <tag>out.action.LBCode="352:0"              ;out.action.ttsAction="Touche O KAI":                   </tag></item>
-        <item>Touche Boxe retour        <tag>out.action.LBCode="158:0"              ;out.action.ttsAction="Touche retour";                  </tag></item>
-        <item>Touche Boxe V O D         <tag>out.action.LBCode="393:0"              ;out.action.ttsAction="Touche V O D";                   </tag></item>
+        <item>Touche Boxe 0 
+            <tag>out.action.LBCode="512:0"              ;out.action.ttsAction="Touche 0";                       </tag>
+        </item>
+        <item>Touche Boxe 1
+            <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="Touche 1";                       </tag>
+        </item>
+        <item>Touche Boxe 2
+            <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="Touche 2";                       </tag>
+        </item>
+        <item>Touche Boxe 3
+            <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="Touche 3";                       </tag>
+        </item>
+        <item>Touche Boxe 4
+            <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Touche 4";                       </tag>
+        </item>
+        <item>Touche Boxe 5
+            <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="Touche 5";                       </tag>
+        </item>
+        <item>Touche Boxe 6
+            <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="Touche 6";                       </tag>
+        </item>
+        <item>Touche Boxe 7
+            <tag>out.action.LBCode="519:0"              ;out.action.ttsAction="Touche 7";                       </tag>
+        </item>
+        <item>Touche Boxe 8
+            <tag>out.action.LBCode="520:0"              ;out.action.ttsAction="Touche 8";                       </tag>
+        </item>
+        <item>Touche Boxe 9
+            <tag>out.action.LBCode="521:0"              ;out.action.ttsAction="Touche 9";                       </tag>
+        </item>
+        <item>Touche Boxe haut
+            <tag>out.action.LBCode="103:0"              ;out.action.ttsAction="Touche haut";                    </tag>
+        </item>
+        <item>Touche Boxe Bas
+            <tag>out.action.LBCode="108:0"              ;out.action.ttsAction="Touche bas";                     </tag>
+        </item>
+        <item>Touche Boxe Gauche
+            <tag>out.action.LBCode="105:0"              ;out.action.ttsAction="Touche gauche";                  </tag>
+        </item>
+        <item>Touche Boxe Droite
+            <tag>out.action.LBCode="116:0"              ;out.action.ttsAction="Touche droite";                  </tag>
+        </item>
+        <item>Touche Boxe  O KAI
+            <tag>out.action.LBCode="352:0"              ;out.action.ttsAction="Touche O KAI":                   </tag>
+        </item>
+        <item>Touche Boxe retour
+            <tag>out.action.LBCode="158:0"              ;out.action.ttsAction="Touche retour";                  </tag>
+        </item>
+        <item>Touche Boxe V O D
+            <tag>out.action.LBCode="393:0"              ;out.action.ttsAction="Touche V O D";                   </tag>
+        </item>
+
         <!-- Chaines -->
-        <item>Chaine Boxe 1             <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="Chaine 1 affichée";              </tag></item>
-        <item>T F 1                     <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="T F 1 est affiché";              </tag></item>
-        <item>Chaine Boxe 2             <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="Chaine 2 affichée";              </tag></item>
-        <item>France 2                  <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="France 2 est affichée";          </tag></item>
-        <item>Chaine Boxe 3             <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="Chaine 3 affichée";              </tag></item>
-        <item>France 3                  <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="France 3 est affichée";          </tag></item>
-        <item>Chaine Boxe 4             <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Chaine 4 affichée";              </tag></item>
-        <item>Canal +                   <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Canal + est affichée";           </tag></item>
-        <item>Chaine Boxe 5             <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="Chaine 5 affichée";              </tag></item>
-        <item>France 5                  <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="France 5 est affichée";          </tag></item>
-        <item>Chaine Boxe 6             <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="Chaine 6 affichée";              </tag></item>
-        <item>M 6                       <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="M 6 est affichée";               </tag></item>
-        <item>Chaine Boxe 7             <tag>out.action.LBCode="519:0"              ;out.action.ttsAction="Chaine 7 affichée";              </tag></item>
-        <item>Chaine Boxe 8             <tag>out.action.LBCode="520:0"              ;out.action.ttsAction="Chaine 8 affichée";              </tag></item>
-        <item>Chaine Boxe 9             <tag>out.action.LBCode="521:0"              ;out.action.ttsAction="Chaine 9 affichée";              </tag></item>
-        <item>Chaine Boxe Suivante      <tag>out.action.LBCode="402:0"              ;out.action.ttsAction="Chaine suivante affichée";       </tag></item>
-        <item>Chaine Boxe précédente    <tag>out.action.LBCode="403:0"              ;out.action.ttsAction="Chaine précédente affichée";     </tag></item>
+        <item>Chaine Boxe 1
+            <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="Chaine 1 affichée";              </tag>
+        </item>
+        <item>T F 1
+            <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="T F 1 est affiché";              </tag>
+        </item>
+        <item>la 1
+            <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="T F 1 est affiché";              </tag>
+        </item>
+        <item>Chaine Boxe 2
+            <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="Chaine 2 affichée";              </tag>
+        </item>
+        <item>France 2
+            <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="France 2 est affichée";          </tag>
+        </item>
+        <item>la 2
+            <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="France 2 est affichée";          </tag>
+        </item>
+        <item>Chaine Boxe 3
+            <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="Chaine 3 affichée";              </tag>
+        </item>
+        <item>France 3
+            <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="France 3 est affichée";          </tag>
+        </item>
+        <item>la 3
+            <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="France 3 est affichée";          </tag>
+        </item>
+        <item>Chaine Boxe 4
+            <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Chaine 4 affichée";              </tag>
+        </item>
+        <item>Canal +
+            <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Canal + est affichée";           </tag>
+        </item>
+        <item>la 4
+            <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Canal + est affichée";           </tag>
+        </item>
+        <item>Chaine Boxe 5
+            <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="Chaine 5 affichée";              </tag>
+        </item>
+        <item>France 5
+            <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="France 5 est affichée";          </tag>
+        </item>
+        <item>la 5
+            <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="France 5 est affichée";          </tag>
+        </item>
+        <item>Chaine Boxe 6
+            <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="Chaine 6 affichée";              </tag>
+        </item>
+        <item>M 6
+            <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="M 6 est affichée";               </tag>
+        </item>
+        <item>la 6
+            <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="M 6 est affichée";               </tag>
+        </item>
+        <item>Chaine Boxe 7
+            <tag>out.action.LBCode="519:0"              ;out.action.ttsAction="Chaine 7 affichée";              </tag>
+        </item>
+        <item>la 7
+            <tag>out.action.LBCode="519:0"              ;out.action.ttsAction="Chaine 7 affichée";              </tag>
+        </item>
+        <item>Chaine Boxe 8
+            <tag>out.action.LBCode="520:0"              ;out.action.ttsAction="Chaine 8 affichée";              </tag>
+        </item>
+        <item>Chaine Boxe 9
+            <tag>out.action.LBCode="521:0"              ;out.action.ttsAction="Chaine 9 affichée";              </tag>
+        </item>
+        <item>Chaine Boxe Suivante
+            <tag>out.action.LBCode="402:0"              ;out.action.ttsAction="Chaine suivante affichée";       </tag>
+        </item>
+        <item>Chaine Boxe précédente
+            <tag>out.action.LBCode="403:0"              ;out.action.ttsAction="Chaine précédente affichée";     </tag>
+        </item>
+
         <!-- 2 digits -->
-        <item>Chaine Boxe 10            <tag>out.action.LBCode="513:0,512:0"        ;out.action.ttsAction="Chaine 10 affichée";             </tag></item>
-        <item>Chaine Boxe 11            <tag>out.action.LBCode="513:0,513:0"        ;out.action.ttsAction="Chaine 11 affichée";             </tag></item>
-        <item>Chaine Boxe 12            <tag>out.action.LBCode="513:0,514:0"        ;out.action.ttsAction="Chaine 12 affichée";             </tag></item>
-        <item>Chaine Boxe 13            <tag>out.action.LBCode="513:0,515:0"        ;out.action.ttsAction="Chaine 13 affichée";             </tag></item>
-        <item>Chaine Boxe 14            <tag>out.action.LBCode="513:0,516:0"        ;out.action.ttsAction="Chaine 14 affichée";             </tag></item>
-        <item>Chaine Boxe 15            <tag>out.action.LBCode="513:0,517:0"        ;out.action.ttsAction="Chaine 15 affichée";             </tag></item>
-        <item>Chaine Boxe 16            <tag>out.action.LBCode="513:0,518:0"        ;out.action.ttsAction="Chaine 16 affichée";             </tag></item>
-        <item>Chaine Boxe 17            <tag>out.action.LBCode="513:0,519:0"        ;out.action.ttsAction="Chaine 17 affichée";             </tag></item>
-        <item>Chaine Boxe 18            <tag>out.action.LBCode="513:0,520:0"        ;out.action.ttsAction="Chaine 18 affichée";             </tag></item>
-        <item>Chaine Boxe 19            <tag>out.action.LBCode="513:0,521:0"        ;out.action.ttsAction="Chaine 19 affichée";             </tag></item>
-        <item>Chaine Boxe 20            <tag>out.action.LBCode="514:0,512:0"        ;out.action.ttsAction="Chaine 20 affichée";             </tag></item>
-        <item>Chaine Boxe 21            <tag>out.action.LBCode="514:0,513:0"        ;out.action.ttsAction="Chaine 21 affichée";             </tag></item>
-        <item>Chaine Boxe 22            <tag>out.action.LBCode="514:0,514:0"        ;out.action.ttsAction="Chaine 22 affichée";             </tag></item>
-        <item>Chaine Boxe 23            <tag>out.action.LBCode="514:0,515:0"        ;out.action.ttsAction="Chaine 23 affichée";             </tag></item>
-        <item>Chaine Boxe 24            <tag>out.action.LBCode="514:0,516:0"        ;out.action.ttsAction="Chaine 24 affichée";             </tag></item>
-        <item>Chaine Boxe 25            <tag>out.action.LBCode="514:0,517:0"        ;out.action.ttsAction="Chaine 25 affichée";             </tag></item>
+        <item>Chaine Boxe 10
+            <tag>out.action.LBCode="513:0,512:0"        ;out.action.ttsAction="Chaine 10 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 11
+            <tag>out.action.LBCode="513:0,513:0"        ;out.action.ttsAction="Chaine 11 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 12
+            <tag>out.action.LBCode="513:0,514:0"        ;out.action.ttsAction="Chaine 12 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 13
+            <tag>out.action.LBCode="513:0,515:0"        ;out.action.ttsAction="Chaine 13 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 14
+            <tag>out.action.LBCode="513:0,516:0"        ;out.action.ttsAction="Chaine 14 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 15
+            <tag>out.action.LBCode="513:0,517:0"        ;out.action.ttsAction="Chaine 15 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 16
+            <tag>out.action.LBCode="513:0,518:0"        ;out.action.ttsAction="Chaine 16 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 17
+            <tag>out.action.LBCode="513:0,519:0"        ;out.action.ttsAction="Chaine 17 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 18
+            <tag>out.action.LBCode="513:0,520:0"        ;out.action.ttsAction="Chaine 18 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 19
+            <tag>out.action.LBCode="513:0,521:0"        ;out.action.ttsAction="Chaine 19 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 20
+            <tag>out.action.LBCode="514:0,512:0"        ;out.action.ttsAction="Chaine 20 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 21
+            <tag>out.action.LBCode="514:0,513:0"        ;out.action.ttsAction="Chaine 21 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 22
+            <tag>out.action.LBCode="514:0,514:0"        ;out.action.ttsAction="Chaine 22 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 23
+            <tag>out.action.LBCode="514:0,515:0"        ;out.action.ttsAction="Chaine 23 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 24
+            <tag>out.action.LBCode="514:0,516:0"        ;out.action.ttsAction="Chaine 24 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 25
+            <tag>out.action.LBCode="514:0,517:0"        ;out.action.ttsAction="Chaine 25 affichée";             </tag>
+        </item>
         <!-- 3 digits -->
-        <item>Chaine Boxe 601           <tag>out.action.LBCode="518:0,512:0,513:0"  ;out.action.ttsAction="Chaine 601 affichée";            </tag></item>
+        <item>Chaine Boxe 601
+            <tag>out.action.LBCode="518:0,512:0,513:0"  ;out.action.ttsAction="Chaine 601 affichée";            </tag>
+        </item>
 
 
+        <!-- Préphrase -->
+        <item>Zap sur   </item>
+        <item>Zappe sur </item>
+        <item>Mets      </item>
+        <item>Va sur    </item>
+        <item>Regarde   </item>
+        <item>Affiche   </item>
    </one-of>
 
+   <item repeat="0-1">
+    <one-of>
+        <!-- Chaines -->
+        <item>Chaine Boxe 1
+            <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="Chaine 1 affichée";              </tag>
+        </item>
+        <item>T F 1
+            <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="T F 1 est affiché";              </tag>
+        </item>
+        <item>la 1
+            <tag>out.action.LBCode="513:0"              ;out.action.ttsAction="T F 1 est affiché";              </tag>
+        </item>
+        <item>Chaine Boxe 2
+            <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="Chaine 2 affichée";              </tag>
+        </item>
+        <item>France 2
+            <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="France 2 est affichée";          </tag>
+        </item>
+        <item>la 2
+            <tag>out.action.LBCode="514:0"              ;out.action.ttsAction="France 2 est affichée";          </tag>
+        </item>
+        <item>Chaine Boxe 3
+            <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="Chaine 3 affichée";              </tag>
+        </item>
+        <item>France 3
+            <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="France 3 est affichée";          </tag>
+        </item>
+        <item>la 3
+            <tag>out.action.LBCode="515:0"              ;out.action.ttsAction="France 3 est affichée";          </tag>
+        </item>
+        <item>Chaine Boxe 4
+            <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Chaine 4 affichée";              </tag>
+        </item>
+        <item>la 4
+            <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="La 4 est affichée";              </tag>
+        </item>
+        <item>Canal +
+            <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Canal plus est affichée";        </tag>
+        </item>
+        <item>Canal plus
+            <tag>out.action.LBCode="516:0"              ;out.action.ttsAction="Canal plus est affichée";        </tag>
+        </item>
+        <item>Chaine Boxe 5
+            <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="Chaine 5 affichée";              </tag>
+        </item>
+        <item>France 5
+            <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="France 5 est affichée";          </tag>
+        </item>
+        <item>la 5
+            <tag>out.action.LBCode="517:0"              ;out.action.ttsAction="France 5 est affichée";          </tag>
+        </item>
+        <item>Chaine Boxe 6
+            <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="Chaine 6 affichée";              </tag>
+        </item>
+        <item>M 6
+            <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="M 6 est affichée";               </tag>
+        </item>
+        <item>la 6
+            <tag>out.action.LBCode="518:0"              ;out.action.ttsAction="M 6 est affichée";               </tag>
+        </item>
+        <item>Chaine Boxe 7
+            <tag>out.action.LBCode="519:0"              ;out.action.ttsAction="Chaine 7 affichée";              </tag>
+        </item>
+        <item>Arté
+            <tag>out.action.LBCode="519:0"              ;out.action.ttsAction="Arté affichée";                  </tag>
+        </item>
+        <item>la 7
+            <tag>out.action.LBCode="519:0"              ;out.action.ttsAction="Arté affichée";                  </tag>
+        </item>
+        <item>Chaine Boxe 8
+            <tag>out.action.LBCode="520:0"              ;out.action.ttsAction="Chaine 8 affichée";              </tag>
+        </item>
+        <item>D 8
+            <tag>out.action.LBCode="520:0"              ;out.action.ttsAction="D 8 affichée";                   </tag>
+        </item>
+        <item>la 8
+            <tag>out.action.LBCode="520:0"              ;out.action.ttsAction="D 8 affichée";                   </tag>
+        </item>
+        <item>Chaine Boxe 9
+            <tag>out.action.LBCode="521:0"              ;out.action.ttsAction="Chaine 9 affichée";              </tag>
+        </item>
+        <item>W 9
+            <tag>out.action.LBCode="521:0"              ;out.action.ttsAction="W 9 affichée";                   </tag>
+        </item>
+        <item>la 9
+            <tag>out.action.LBCode="521:0"              ;out.action.ttsAction="W 9 affichée";                   </tag>
+        </item>
 
+        <!-- 2 digits -->
+        <item>Chaine Boxe 10
+            <tag>out.action.LBCode="513:0,512:0"        ;out.action.ttsAction="Chaine 10 affichée";             </tag>
+        </item>
+        <item>T M C
+            <tag>out.action.LBCode="513:0,512:0"        ;out.action.ttsAction="T M C affichée";                 </tag>
+        </item>
+        <item>la 10
+            <tag>out.action.LBCode="513:0,512:0"        ;out.action.ttsAction="T M C affichée";                 </tag>
+        </item>
+        <item>Chaine Boxe 11
+            <tag>out.action.LBCode="513:0,513:0"        ;out.action.ttsAction="Chaine 11 affichée";             </tag>
+        </item>
+        <item>N T 1
+            <tag>out.action.LBCode="513:0,513:0"        ;out.action.ttsAction="N T 1 affichée";                 </tag>
+        </item>
+        <item>la 11
+            <tag>out.action.LBCode="513:0,513:0"        ;out.action.ttsAction="N T 1 affichée";                 </tag>
+        </item>
+        <item>Chaine Boxe 12
+            <tag>out.action.LBCode="513:0,514:0"        ;out.action.ttsAction="Chaine 12 affichée";             </tag>
+        </item>
+        <item>N R J 12
+            <tag>out.action.LBCode="513:0,514:0"        ;out.action.ttsAction="énergie 12 affichée";            </tag>
+        </item>
+        <item>Chaine Boxe 13
+            <tag>out.action.LBCode="513:0,515:0"        ;out.action.ttsAction="Chaine 13 affichée";             </tag>
+        </item>
+        <item>L C P
+            <tag>out.action.LBCode="513:0,515:0"        ;out.action.ttsAction="LCP affichée";                   </tag>
+        </item>
+        <item>La 13
+            <tag>out.action.LBCode="513:0,515:0"        ;out.action.ttsAction="LCP affichée";                   </tag>
+        </item>
+        <item>Chaine Boxe 14
+            <tag>out.action.LBCode="513:0,516:0"        ;out.action.ttsAction="Chaine 14 affichée";             </tag>
+        </item>
+        <item>France 4
+            <tag>out.action.LBCode="513:0,516:0"        ;out.action.ttsAction="France 4 affichée";              </tag>
+        </item>
+        <item>la 4
+            <tag>out.action.LBCode="513:0,516:0"        ;out.action.ttsAction="France 4 affichée";              </tag>
+        </item>
+        <item>Chaine Boxe 15
+            <tag>out.action.LBCode="513:0,517:0"        ;out.action.ttsAction="Chaine 15 affichée";             </tag>
+        </item>
+        <item>B F M
+            <tag>out.action.LBCode="513:0,517:0"        ;out.action.ttsAction="BFM affichée";                   </tag>
+        </item>
+        <item>B F M TV
+            <tag>out.action.LBCode="513:0,517:0"        ;out.action.ttsAction="BFM affichée";                   </tag>
+        </item>
+        <item>la 15
+            <tag>out.action.LBCode="513:0,517:0"        ;out.action.ttsAction="BFM affichée";                   </tag>
+        </item>
+        <item>Chaine Boxe 16
+            <tag>out.action.LBCode="513:0,518:0"        ;out.action.ttsAction="Chaine 16 affichée";             </tag>
+        </item>
+        <item>I Télé
+            <tag>out.action.LBCode="513:0,518:0"        ;out.action.ttsAction="I Télé affichée";                </tag>
+        </item>
+        <item>I T V
+            <tag>out.action.LBCode="513:0,518:0"        ;out.action.ttsAction="I Télé affichée";                </tag>
+        </item>
+        <item>la 16
+            <tag>out.action.LBCode="513:0,518:0"        ;out.action.ttsAction="I Télé affichée";                </tag>
+        </item>
+        <item>Chaine Boxe 17
+            <tag>out.action.LBCode="513:0,519:0"        ;out.action.ttsAction="Chaine 17 affichée";             </tag>
+        </item>
+        <item>D 17
+            <tag>out.action.LBCode="513:0,519:0"        ;out.action.ttsAction="D 17 affichée";                  </tag>
+        </item>
+        <item>la 17
+            <tag>out.action.LBCode="513:0,519:0"        ;out.action.ttsAction="D 17 affichée";                  </tag>
+        </item>
+        <item>Chaine Boxe 18
+            <tag>out.action.LBCode="513:0,520:0"        ;out.action.ttsAction="Chaine 18 affichée";             </tag>
+        </item>
+        <item>Gulli
+            <tag>out.action.LBCode="513:0,520:0"        ;out.action.ttsAction="Gulli affichée";                 </tag>
+        </item>
+        <item>la 18
+            <tag>out.action.LBCode="513:0,520:0"        ;out.action.ttsAction="Gulli affichée";                 </tag>
+        </item>
+        <item>Chaine Boxe 19
+            <tag>out.action.LBCode="513:0,521:0"        ;out.action.ttsAction="Chaine 19 affichée";             </tag>
+        </item>
+        <item>France O
+            <tag>out.action.LBCode="513:0,521:0"        ;out.action.ttsAction="France O affichée";              </tag>
+        </item>
+        <item>la 19
+            <tag>out.action.LBCode="513:0,521:0"        ;out.action.ttsAction="la 19 affichée";                 </tag>
+        </item>
+        <item>Chaine Boxe 20
+            <tag>out.action.LBCode="514:0,512:0"        ;out.action.ttsAction="Chaine 20 affichée";             </tag>
+        </item>
+        <item>H D 1
+            <tag>out.action.LBCode="514:0,512:0"        ;out.action.ttsAction="HD1 affichée";                   </tag>
+        </item>
+        <item>la 20
+            <tag>out.action.LBCode="514:0,512:0"        ;out.action.ttsAction="HD1 affichée";                   </tag>
+        </item>
+        <item>Chaine Boxe 21
+            <tag>out.action.LBCode="514:0,513:0"        ;out.action.ttsAction="Chaine 21 affichée";             </tag>
+        </item>
+        <item>l'équipe 21
+            <tag>out.action.LBCode="514:0,513:0"        ;out.action.ttsAction="l'équipe 21 affichée";           </tag>
+        </item>
+        <item>la 21
+            <tag>out.action.LBCode="514:0,513:0"        ;out.action.ttsAction="l'équipe 21 affichée";           </tag>
+        </item>
+        <item>Chaine Boxe 22
+            <tag>out.action.LBCode="514:0,514:0"        ;out.action.ttsAction="Chaine 22 affichée";             </tag>
+        </item>
+        <item>Sister
+            <tag>out.action.LBCode="514:0,514:0"        ;out.action.ttsAction="Sister affichée";                </tag>
+        </item>
+        <item>la 22
+            <tag>out.action.LBCode="514:0,514:0"        ;out.action.ttsAction="Sister affichée";                </tag>
+        </item>
+        <item>Chaine Boxe 23
+            <tag>out.action.LBCode="514:0,515:0"        ;out.action.ttsAction="Chaine 23 affichée";             </tag>
+        </item>
+        <item>Numéro 23
+            <tag>out.action.LBCode="514:0,515:0"        ;out.action.ttsAction="Numéro 23 affichée";             </tag>
+        </item>
+        <item>la 23
+            <tag>out.action.LBCode="514:0,515:0"        ;out.action.ttsAction="Numéro 23 affichée";             </tag>
+        </item>
+        <item>Chaine Boxe 24
+            <tag>out.action.LBCode="514:0,516:0"        ;out.action.ttsAction="Chaine 24 affichée";             </tag>
+        </item>
+        <item>R M C découverte
+            <tag>out.action.LBCode="514:0,516:0"        ;out.action.ttsAction="R M C découverte affichée";      </tag>
+        </item>
+        <item>la 24
+            <tag>out.action.LBCode="514:0,516:0";        out.action.ttsAction="R M C découverte affichée";      </tag>
+        </item>
+        <item>Chaine Boxe 25
+            <tag>out.action.LBCode="514:0,517:0";        out.action.ttsAction="Chaine 25 affichée";             </tag>
+        </item>
+        <item>Chérie 25
+            <tag>out.action.LBCode="514:0,517:0";        out.action.ttsAction="Chérie 25 affichée";             </tag>
+        </item>
+
+        <!-- 3 digits -->
+        <item>Chaine Boxe 142
+            <tag>out.action.LBCode="513:0,516:0,514:0";  out.action.ttsAction="Chaine 142 affichée";            </tag>
+        </item>
+        <item>N R J Hit
+            <tag>out.action.LBCode="513:0,516:0,514:0";  out.action.ttsAction="N R J Hit affichée";             </tag>
+        </item>
+        <item>énergie Hit
+            <tag>out.action.LBCode="513:0,516:0,514:0";  out.action.ttsAction="N R J Hit affichée";             </tag>
+        </item>
+
+
+
+        </one-of>
+    </item>
     <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/liveboxremote";</tag>
   </rule>
 </grammar>
+
