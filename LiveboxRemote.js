@@ -22,7 +22,6 @@ exports.action = function ( data , callback , config , SARAH ) {
 	
 	if ( LiveBoxIP == undefined ) { return callback ({ 'tts' : 'Live box non trouvée' }) }
 
-	config = config.modules.liveboxremote;
 	var cmdArray = data.LBCode.split (',');
 
 	sendLiveBox ( cmdArray );
