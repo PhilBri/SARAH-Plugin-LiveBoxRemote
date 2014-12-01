@@ -33,7 +33,7 @@ exports.action = function ( data , callback , config , SARAH ) {
 		var LBCmd 	= cmdArray.shift();
 		var request = require ( 'request' );
 		var options = 	{	url	: 	'http://' + LiveBoxIP + ':8080/remoteControl/cmd',
-    						qs	: { 'operation'	: '01', 'key' : LBCmd.substr (0,3) , 'mode' : LBCmd.substr (4,1) }
+							qs	: { 'operation'	: '01', 'key' : LBCmd.substr (0,3) , 'mode' : LBCmd.substr (4,1) }
 						}
 
 		request( options , function ( error , response , body ) {
