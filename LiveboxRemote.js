@@ -23,7 +23,7 @@ exports.action = function ( data , callback , config , SARAH ) {
 	if ( LiveBoxIP == undefined ) { return callback ({ 'tts' : 'Live box non trouvée' }) }
 
 	config = config.modules.liveboxremote;
-	var cmdArray = data.LBCode.split(',');
+	var cmdArray = data.LBCode.split (',');
 
 	sendLiveBox ( cmdArray );
 
@@ -33,7 +33,7 @@ exports.action = function ( data , callback , config , SARAH ) {
 		var LBCmd 	= cmdArray.shift();
 		var request = require ( 'request' );
 		var options = 	{	url	: 	'http://' + LiveBoxIP + ':8080/remoteControl/cmd',
-    						qs	: { 'operation'	: '01', 'key' : LBCmd.substr(0,3) , 'mode' : LBCmd.substr(4,1) }
+    						qs	: { 'operation'	: '01', 'key' : LBCmd.substr (0,3) , 'mode' : LBCmd.substr (4,1) }
 						}
 
 		request( options , function ( error , response , body ) {
@@ -41,14 +41,14 @@ exports.action = function ( data , callback , config , SARAH ) {
 			if ( !error && response.statusCode == 200 ) {
 
 				if ( cmdArray.length ) {
-					sendLiveBox(cmdArray);
+					sendLiveBox ( cmdArray );
     			}
 
     			console.log ( '\r\nLiveBoxRemote => Cmd : ' + data.LBCode + ' = OK\r\n' );
     			callback ({ 'tts': data.ttsAction });
 
     		} else {
-    			callback ({ 'tts': 'erreur commande live box' });
+    			callback ({ 'tts': 'Erreur commande live box' });
     		}
     	});
 	}	
