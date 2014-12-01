@@ -14,7 +14,7 @@ exports.init = function ( SARAH ) {
 	findAdrs( 'livebox', 'UHD', function ( BoxIP ) {
 		if ( !BoxIP ) { return console.log ( '\r\nLiveBoxRemote => LiveBox non trouvée\r\n' ) }
 		LiveBoxIP = BoxIP;
-		console.log ( '\r\nLiveBoxRemote => Livebox IP = ' + LiveBoxIP + '\r\n');
+		console.log ( '\r\nLiveBoxRemote => Livebox IP = ' + LiveBoxIP + ' (Auto Détection)\r\n');
 	});
 }
 
