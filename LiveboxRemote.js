@@ -1,20 +1,23 @@
 /*__________________________________________________
-| LiveBoxRemote V 2.0 								|
-| Plugin pour S.A.R.A.H.							|
-| ( By Phil Bri 04/2014 )							|
+|              LiveBoxRemote v2.0                   |
+|                                                   |
+| Author : Phil Bri (12/2014)                       |
+|    (See http://encausse.wordpress.com/s-a-r-a-h/) |
+| Description :                                     |
+|    Orange Livebox TV Plugin for SARAH project     |
 |___________________________________________________|
 */
 
 var LiveBoxIP;
 
 exports.init = function ( SARAH ) {
+	
+	var findLB = require ( './lib/findUPNP.js' );
 
-	var findAdrs = require ( './lib/findUPNP.js' );
-
-	findAdrs( 'livebox', 'UHD', function ( BoxIP ) {
-		if ( !BoxIP ) { return console.log ( '\r\nLiveBoxRemote => LiveBox non trouvée\r\n' ) }
+	findLB ( 'livebox', 'UHD', function ( BoxIP ) {
+		if ( !BoxIP ) { return console.log ( '\r\nLiveBoxRemote => LiveBox non trouvée (Auto détection)\r\n' ) }
 		LiveBoxIP = BoxIP;
-		console.log ( '\r\nLiveBoxRemote => Livebox IP = ' + LiveBoxIP + ' (Auto Détection)\r\n');
+		console.log ( '\r\nLiveBoxRemote => Livebox IP = ' + LiveBoxIP + ' (Auto détection)\r\n');
 	});
 }
 
@@ -31,7 +34,7 @@ exports.action = function ( data , callback , config , SARAH ) {
 		// Configure the request : NOTE -> The {qs} option add { ?operation=01&key=[LBCmd[123]]&mode=[LBCmd[5]] } at the end of {url}
 		var LBCmd 	= cmdArray.shift();
 		var request = require ( 'request' );
-		var options = 	{	url	: 	'http://' + LiveBoxIP + ':8080/remoteControl/cmd',
+		var options	=	{	url	: 	'http://' + LiveBoxIP + ':8080/remoteControl/cmd',
 							qs	: { 'operation'	: '01', 'key' : LBCmd.substr (0,3) , 'mode' : LBCmd.substr (4,1) }
 						}
 
@@ -43,7 +46,7 @@ exports.action = function ( data , callback , config , SARAH ) {
 					sendLiveBox ( cmdArray );
     			}
 
-    			console.log ( '\r\nLiveBoxRemote => Cmd : ' + data.LBCode + ' = OK\r\n' );
+    			console.log ( '\r\nLiveBoxRemote => Cmd : "' + data.LBCode + '" = OK\r\n' );
     			callback ({ 'tts': data.ttsAction });
 
     		} else {
