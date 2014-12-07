@@ -2,7 +2,8 @@
 	"modules" : { 
 		"liveboxremote"  : {
 			"description": "SARAH controle le Décodeur TV LiveBox.",
-			"version" : "2.0"
+			"version" : "2.1",
+			"livebox_IP" : "autodetect"
 		}
 	}
 }
