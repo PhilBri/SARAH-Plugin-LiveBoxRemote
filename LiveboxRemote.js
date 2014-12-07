@@ -22,12 +22,10 @@ exports.init = function ( SARAH ) {
 		fsearch();
 
 		SARAH.listen ( 'autodetect', function ( data ) {
-
 			if ( data.from != 'LiveBoxRemote' ) fsearch();
-			else
-			{
-				if ( LiveBoxIP ) console.log ( '\r\nLiveBoxRemote => Livebox IP = ' + LiveBoxIP + ' (Auto Detect Plugin)');
-				else console.log ( '\r\nLiveBoxRemote => LiveBox non trouvée (Auto Detect Plugin)' );
+			else {
+				if ( LiveBoxIP ) console.log ( '\r\nLiveBoxRemote => Livebox : ip = ' + LiveBoxIP + ' (Auto Detect Plugin)');
+				else console.log ( '\r\nLiveBoxRemote => LiveBox : Non trouvée (Auto Detect Plugin)' );
 				SARAH.context.flag = false;
 			}
 		});
@@ -37,7 +35,7 @@ exports.init = function ( SARAH ) {
 		if ( SARAH.context.flag != true ) {
 			SARAH.context.flag = true;
 
-			findLB = require( './lib/findLB.js') ( 'livebox', 'UHD', function ( RetIP ) {
+			findLB = require( './lib/findLB.js' ) ( 'livebox', 'UHD', function ( RetIP ) {
 				SARAH.context.liveboxremote = { 'ip' : RetIP };
 				LiveBoxIP = SARAH.context.liveboxremote.ip;
 				SARAH.trigger ( 'autodetect', { 'from' : 'LiveBoxRemote' });
@@ -48,8 +46,8 @@ exports.init = function ( SARAH ) {
 
 exports.action = function ( data , callback , config , SARAH ) {
 
-	var 	cmdArray = data.LBCode.split (',');
-	var 	myReg = /\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b/;
+	var	cmdArray = data.LBCode.split (','),
+		myReg = /\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b/;
 	
 	if ( ! myReg.test( LiveBoxIP ) && ! myReg.test( config.modules.liveboxremote.livebox_IP )) { 
 		return callback ({ 'tts' : 'Live box non trouvée' }) }
@@ -71,7 +69,7 @@ exports.action = function ( data , callback , config , SARAH ) {
 
 				if ( cmdArray.length ) sendLiveBox ( cmdArray );
 
-    				console.log ( '\r\nLiveBoxRemote => Commande : ' + data.LBCode + ' = OK' );
+    				console.log ( '\r\nLiveBoxRemote => Commande : "' + data.LBCode + '" = OK' );
     				callback ({ 'tts' : data.ttsAction });
  
     			} else callback ({ 'tts' : 'Erreur commande live box' });
