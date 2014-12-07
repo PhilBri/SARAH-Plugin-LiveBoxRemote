@@ -11,9 +11,9 @@
 var LiveBoxIP;
 
 exports.init = function ( SARAH ) {
-	var 	config = SARAH.ConfigManager.getConfig();
+	var config = SARAH.ConfigManager.getConfig();
 
-	if (( /^autodetect$/i ).test( config.modules.liveboxremote.livebox_IP ) == false ) {
+	if ( /^autodetect$/i.test( config.modules.liveboxremote.livebox_IP ) == false ) {
 		return LiveBoxIP = config.modules.liveboxremote.livebox_IP;
 	}
 
@@ -49,9 +49,9 @@ exports.init = function ( SARAH ) {
 exports.action = function ( data , callback , config , SARAH ) {
 
 	var 	cmdArray = data.LBCode.split (',');
-	var 	myReg = ( /\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b/ );
+	var 	myReg = /\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b/;
 	
-	if ( ! myReg.test(LiveBoxIP) && ! myReg.test( config.modules.liveboxremote.livebox_IP )) { 
+	if ( ! myReg.test( LiveBoxIP ) && ! myReg.test( config.modules.liveboxremote.livebox_IP )) { 
 		return callback ({ 'tts' : 'Live box non trouvée' }) }
 
 	sendLiveBox ( cmdArray );
