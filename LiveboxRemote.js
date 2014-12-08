@@ -49,8 +49,10 @@ exports.action = function ( data , callback , config , SARAH ) {
 	var	cmdArray = data.LBCode.split (','),
 		myReg = /\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b/;
 	
-	if ( ! myReg.test( LiveBoxIP ) && ! myReg.test( config.modules.liveboxremote.livebox_IP )) { 
+	if ( ! myReg.test( SARAH.context..liveboxremote.ip ) && ! myReg.test( config.modules.liveboxremote.livebox_IP )) { 
 		return callback ({ 'tts' : 'Live box non trouvée' }) }
+
+	LiveBoxIP = SARAH.context..liveboxremote.ip;
 
 	sendLiveBox ( cmdArray );
 
